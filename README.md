@@ -1,4 +1,13 @@
-# hellohello
+# Introduction
+
+Projeto em vue
+
+# Author(s)
+
+<!-- TODO -->
+
+    Diniz Rodrigues da Silva Junior
+    dinizjunior67@gmail.com / dinizjunior123@yahoo.com
 
 ## Project setup
 ```

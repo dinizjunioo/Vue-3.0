@@ -1,6 +1,6 @@
 <template>
     <div class="main">
-    <h1>TABELA COM VUE </h1>
+    <h1>TABNAV COM VUE </h1>
         <div class="container">
             <ul class="nav nav-tabs">
                 <li v-for="tab in tabs" :key="tab" class="nav-item" >
@@ -42,8 +42,16 @@ export default {
 }
 .container{
     background-color: aquamarine;
+   
 }
 .main{
-    /* background-color: antiquewhite; */
+    max-width: 500px;
+    margin: 30px auto;
+    overflow: auto;
+    min-height: 300px;
+    border: 2px solid chartreuse;
+    padding: 30px;
+    border-radius: 10px;
+    font-size: 12px;
 }
 </style>

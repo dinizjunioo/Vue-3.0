@@ -3,10 +3,10 @@
     <hr/>
     <div class="form-todo form-group">
       <p>
-        <input placeholder="nome" type="text" name="author" class="form-control" v-model="name" />
+        <input placeholder="nome" type="text" name="author" class="input" v-model="name" />
       </p>
       <p>
-        <textarea placeholder="comentario"  name="message" class="form-control" v-model="message" ></textarea>
+        <input placeholder="comentario"  type="text" name="message" class="input2" v-model="message" >
       </p>
       <button v-on:click="addComment" type="submit" class="btn btn-primary">Comentar</button>
     </div>
@@ -23,6 +23,43 @@
     <hr />
   </div>
 </template>
+
+<style>
+.input
+{
+ height: 40px;
+    width: 300px;
+    padding: 0px 10px 0px 10px;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 10px;
+    background-color: rgb(46, 129, 101);
+    color:rgb(181, 205, 226);
+    font-size: 15px;
+    
+}
+
+.input2
+{
+ height: 80px;
+    width: 300px;
+    padding: 0px 10px 0px 10px;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 10px;
+    background-color: rgb(46, 129, 101);
+    color:rgb(181, 205, 226);
+   font-size: 15px;
+}
+
+::placeholder
+ {
+        
+        /* Firefox, Chrome, Opera */
+        color: rgb(159, 202, 223);
+        font-size: 1.5em;
+}
+</style>
 
 <script>
 export default {

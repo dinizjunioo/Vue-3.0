@@ -1,10 +1,13 @@
 <template>
   <div id="app">
-    <TabNav :tabs="['Home', 'Settings','Comentario']" :selected="selected" @selected="setSelected">
+    
+    <TabNav :tabs="['Comentario','Home', 'Settings']" :selected="selected" @selected="setSelected">
+      <Tab :isSelected="selected === 'Comentario'">
+         <Comments/> 
+      </Tab>
       <Tab :isSelected="selected === 'Home'">
         <h3> TEXTO 1 TEXTO 1</h3>
       </Tab>
-
       <Tab :isSelected="selected === 'Settings'">
         <item>
           <li> Lista 1 </li>
@@ -13,11 +16,7 @@
           <li> Lista 4 </li>
         </item>
       </Tab>
-
-      <Tab :isSelected="selected === 'Comentario'">
-         <Comments/> 
-      </Tab>
-    </TabNav> 
+    </TabNav>
     <!-- <Comments/> -->
   </div>
 </template>
@@ -33,7 +32,7 @@ export default {
 
    data() {
      return {
-       selected: 'Home'
+       selected: 'Comentario'
      }
    },
 
@@ -48,6 +47,8 @@ export default {
 <style>
 
 #app{
+  
+  /*
   font-family: Avenir, Arial, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -58,7 +59,7 @@ export default {
   flex-direction: row; 
  
   justify-content: center; 
-  /* justify-content-center; */
+   justify-content-center; */
 }
 /* npm run serve */
 </style>
